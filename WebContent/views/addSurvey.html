@@ -1,0 +1,63 @@
+
+
+<div class="jumbotron text-center">
+
+
+	<div>
+		<form name="form" ng-submit="createSurvey()" class="css-form"
+			novalidate>
+			<b> SurveyId:</b> <input type="text" ng-model="Survey.surveyId"
+				required ng-pattern="/^[0-9]{3}$/" name="surveyId" id="surveyId" />
+			<br />
+			<div ng-show="form.$submitted || form.surveyId.$touched">
+				<span style="color: red" ng-show="form.surveyId.$error.required">Please
+					enter a survey id</span> <span style="color: red"
+					ng-show="form.surveyId.$error.pattern">Please enter id with
+					3 numbers</span>
+			</div>
+			<br> <b> Title:</b> <input type="text" ng-model="Survey.title"
+				required ng-pattern="/^[a-zA-Z0-9?\s]*$/" name="title" id="title" />
+			<br />
+			<div ng-show="form.$submitted || form.title.$touched">
+				<span style="color: red" ng-show="form.title.$error.required">Please
+					enter a title</span> <span style="color: red"
+					ng-show="form.title.$error.pattern">Please enter a correct
+					title.</span>
+			</div>
+			<br> <b>Choice 1:</b> <input type="text"
+				ng-model="Survey.choice1" required ng-pattern="/^[a-zA-Z0-9]*$/"
+				name="choice1" id="choice1" /> <br />
+			<div ng-show="form.$submitted || form.choice1.$touched">
+				<span style="color: red" ng-show="form.choice1.$error.required">Please
+					enter a choice.</span> <span style="color: red"
+					ng-show="form.choice1.$error.pattern">Please enter a correct
+					choice.</span>
+			</div>
+			<br> <b>Choice 2:</b> <input type="text"
+				ng-model="Survey.choice2" required ng-pattern="/^[a-zA-Z0-9]*$/"
+				name="choice2" id="choice2" /> <br />
+			<div ng-show="form.$submitted || form.choice2.$touched">
+				<span style="color: red" ng-show="form.choice2.$error.required">Please
+					enter a choice.</span> <span style="color: red"
+					ng-show="form.choice2.$error.pattern">Please a enter correct
+					choice.</span>
+			</div>
+			<br> <b>Status:</b> <select ng-model="Survey.status"
+				name="status" id="status" required>
+				<option value="Open">Open</option>
+				<option value="Close">Close</option>
+			</select> <br />
+			<div ng-show="form.$submitted || form.status.$touched">
+				<span style="color: red" ng-show="form.status.$error.required">Please
+					select a status</span>
+			</div>
+			<br> <input class="btn btn-primary" type="submit"
+				ng-disabled="form.$invalid" value="Add Survey" />
+		</form>
+	</div>
+
+
+
+</div>
+Please enter another id if a survey is not added with the correct format
+of survey id.

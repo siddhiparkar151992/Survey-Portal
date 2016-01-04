@@ -1,0 +1,28 @@
+<!--    List Surveys screen    -->
+<div class="container">
+	<div class="welcomeBox">
+		<h2 class="title">Polls @ Xoriant</h2>
+	</div>
+
+	<div class="surveyListBox row-fluid">
+		<div class="span3"
+			data-ng-repeat="survey in surveys | orderBy: 'surveyId'">
+			<h2>Survey {{ $index+1 }}</h2>
+			<p class="question">{{ survey.title}}?</p>
+			<ul>
+				<li>{{ survey.choice1 }}</li>
+				<li>{{ survey.choice2 }}</li>
+			</ul>
+			<p>
+				<a class="btn btn-primary"
+					ui-sref="responseInfo({id:survey.surveyId})">View responses »</a><br>
+				<br> <a class="btn btn-primary"
+					ui-sref="idInfo({id:survey.surveyId})">View Survey Info »</a>
+			</p>
+		</div>
+	</div>
+
+
+
+
+</div>

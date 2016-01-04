@@ -1,0 +1,174 @@
+.container{ width:95%; }
+.welcome {margin-top: 10px;}
+.addMovie{float: right;}
+.movie-info .poster{
+  float: left;
+  width: 20%;
+}
+.movie-info .info{
+  width: 80%;
+}
+.clearBoth{
+  clear: both;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+.backBtn{
+  float: right;
+  margin-top: 110px;
+}
+
+ body {
+        padding-top: 20px;
+        padding-bottom: 60px;
+      }
+
+      /* Custom container */
+      .container {
+        margin: 0 auto;
+        max-width: 1000px;
+      }
+      .container > hr {
+        margin: 60px 0;
+      }
+
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        margin: 80px 0;
+        text-align: center;
+      }
+      .jumbotron h1 {
+        font-size: 65px;
+        line-height: 1;
+        margin-bottom: 50px;
+      }
+      .jumbotron p{
+      font-size: 45px;
+      }
+      .jumbotron .lead {
+        font-size: 24px;
+        line-height: 1.25;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+      h2.title{
+        color: rgb(72, 171, 72);
+        margin: 30px 0 20px 0;
+      }
+      .surveyListBox h2{
+        color: #0088cc
+      }
+      .surveyListBox .question{
+        font-weight: bold;
+          font-size: 0.95em;
+      }
+
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+      .masthead .title{
+        color: #E70829;
+      }
+      .surveyListBox {
+        margin: 0 0 50px 0;
+      }
+      .angularLink{
+        color: #E70829;
+      }
+
+      /* Customize the navbar links to be fill the entire space of the .navbar */
+      .navbar{
+        width: 1000px;
+        margin: 0px auto;
+      }
+      .navbar .navbar-inner {
+        padding: 0;
+      }
+      .navbar .nav {
+        margin: 0;
+        display: table;
+        width: 100%;
+      }
+      .navbar .nav li {
+        display: table-cell;
+        width: 1%;
+        float: none;
+      }
+      .navbar .nav li a {
+        font-weight: bold;
+        text-align: center;
+        border-left: 1px solid rgba(255,255,255,.75);
+        border-right: 1px solid rgba(0,0,0,.1);
+      }
+      .navbar .nav li:first-child a {
+        border-left: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      .navbar .nav li:last-child a {
+        border-right: 0;
+        border-radius: 0 3px 3px 0;
+      }
+
+/** Chart styles override   **/
+.progress {
+  height: 3.5625em;
+  width: 80%;
+  margin: 0px auto;
+}
+
+.progress-bar {
+  padding-top: 15px;
+  font-size: 1.3em;
+}
+
+.progress-bar-secondary {
+  background-color: #E70829;
+}
+
+[ui-view].ng-enter, [ui-view].ng-leave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  -webkit-transition:all .5s ease-in-out;
+	-moz-transition:all .5s ease-in-out;
+	-o-transition:all .5s ease-in-out;
+	transition:all .5s ease-in-out;
+}
+
+[ui-view].ng-enter {
+  opacity: 0;
+  -webkit-transform:scale3d(0.5, 0.5, 0.5);
+  -moz-transform:scale3d(0.5, 0.5, 0.5);
+  transform:scale3d(0.5, 0.5, 0.5);
+}
+
+[ui-view].ng-enter-active {
+  opacity: 1;
+  -webkit-transform:scale3d(1, 1, 1);
+  -moz-transform:scale3d(1, 1, 1);
+  transform:scale3d(1, 1, 1);
+}
+
+[ui-view].ng-leave {
+  opacity: 1;
+  /*padding-left: 0px;*/  
+  -webkit-transform:translate3d(0, 0, 0);
+  -moz-transform:translate3d(0, 0, 0);
+  transform:translate3d(0, 0, 0);
+}
+
+[ui-view].ng-leave-active {
+  opacity: 0;
+  /*padding-left: 100px;*/
+  -webkit-transform:translate3d(100px, 0, 0);
+  -moz-transform:translate3d(100px, 0, 0);
+  transform:translate3d(100px, 0, 0);
+}

@@ -1,0 +1,22 @@
+<!--    List Surveys screen    -->
+<div class="container">
+	<div class="welcomeBox">
+		<h2 class="title">Polls @ Xoriant</h2>
+	</div>
+
+	<div class="surveyListBox row-fluid">
+		<div class="span3" data-ng-repeat="employee in employees">
+			<h2>Employee {{ $index+1 }}</h2>
+			<p class="question">{{ employee.ename}}</p>
+
+			<!--            <p class="question">{{ employee.empId}}</p> -->
+
+			<p>
+				<a class="btn btn-primary"
+					ui-sref="employeeSurvey({id:employee.empId})">View Surveys
+					taken »</a><br> <br>
+
+			</p>
+		</div>
+	</div>
+</div>

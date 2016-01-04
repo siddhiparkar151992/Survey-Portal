@@ -1,0 +1,26 @@
+<!-- 	Survey Response Info Screen 	-->
+<div class="jumbotron text-center">
+	<div class="info">
+
+
+
+		<h1>{{surveyTitle}}?</h1>
+		<p>-> {{choice1}}</p>
+		<br>
+		<p>-> {{choice2}}</p>
+		<br>
+		<p>Status:</p>&nbsp&nbsp&nbsp
+		
+
+		<div ng-switch on="status">
+			<div ng-switch-when="Open">
+				<p style="color: green">{{status}}</p>
+			</div>
+			<div ng-switch-when="Close">
+				<p style="color: red">{{status}}</p>
+			</div>
+		</div>
+		<a class="backBtn btn btn-large btn-success" ui-sref="surveys">Back
+			to the list</a>
+	</div>
+</div>

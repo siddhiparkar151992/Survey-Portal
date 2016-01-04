@@ -1,0 +1,30 @@
+<div class="jumbotron text-center">
+
+
+	<div>
+		<form name="form" ng-submit="createEmployeeSurvey()" class="css-form"
+			novalidate>
+			<p>Survey :</p>
+			<br>
+			<br>
+			<p>{{surveyTitle}}</p>
+			<br>
+			<br> <br> <b>Choice 1 : {{choice1}}</b>&nbsp&nbsp <input
+				type="radio" ng-model="EmployeeSurvey.finalChoice" id="finalChoice"
+				name="finalChoice" value={{choice1}}
+				ng-required="!EmployeeSurvey.finalChoice"> <br>
+			<br>
+			<br> <b> Choice 2 : {{choice2}}</b>&nbsp <input type="radio"
+				ng-model="EmployeeSurvey.finalChoice" id="finalChoice"
+				name="finalChoice" value={{choice2}}
+				ng-required="!EmployeeSurvey.finalChoice"> <br>
+			<br> <input class="btn btn-primary" type="submit"
+				ng-disabled="form.$invalid" value="Register" />
+		</form>
+
+	</div>
+
+
+
+</div>
+Please Select one Choice.

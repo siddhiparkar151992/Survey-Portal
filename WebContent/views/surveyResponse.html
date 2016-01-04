@@ -1,0 +1,34 @@
+<!-- 	Survey Response Info Screen 	-->
+<div class="jumbotron text-center">
+	<div class="info">
+		<h1>{{ survey.title }}?</h1>
+
+		<div class="progress">
+			<div class="progress-bar" style="width: {{choice1Pc">{{
+				surveyResponse.choice1 }} - {{ surveyResponse.countChoice1 }}
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[{{choice1Pc}}%]</div>
+			<div class="progress-bar progress-bar-secondary"
+				style="width: {{choice2Pc">{{ surveyResponse.choice2 }} - {{
+				surveyResponse.countChoice2 }}
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[{{choice2Pc}}%]</div>
+		</div>
+
+		<a class="backBtn btn btn-large btn-success" ui-sref="surveys">Back
+			to the list</a>
+		<div class="clearBoth"></div>
+	</div>
+	<!--div id="responseChart" style="height: 250px; width:500px;"></div-->
+
+	<!--
+	<div class="graph">
+	    <div class="graph-bar" style="width: 30%;">
+	        Bar 1
+	    </div>
+	    <div class="graph-bar graph-bar-alt" style="width: 50%;">
+	        Bar 2
+	    </div>
+	</div>
+	-->
+
+
+</div>

@@ -1,0 +1,38 @@
+
+
+<div class="jumbotron text-center">
+
+
+	<div>
+		<form name="form" ng-submit="createEmployee()" class="css-form"
+			novalidate>
+			<b>EmployeeId:</b> <input type="text" ng-model="Employee.empId"
+				required ng-pattern="/^e{1}[0-9]{2}$/" name="empId"
+				placeholder="e05" id="empId" /> <br />
+			<div ng-show="form.$submitted || form.empId.$touched">
+				<span style="color: red" ng-show="form.empId.$error.required">Please
+					enter an employee id</span> <span style="color: red"
+					ng-show="form.empId.$error.pattern">Please enter id with 'e'
+					followed by two numbers.</span>
+			</div>
+
+			<b>Employee Name:</b> <input type="text" ng-model="Employee.ename"
+				name="ename" required ng-pattern="/^[a-zA-Z]*$/" placeholder="Barry"
+				id="ename" /> <br />
+			<div ng-show="form.$submitted || form.ename.$touched">
+				<span style="color: red" ng-show="form.ename.$error.required">Please
+					enter employee name.</span> <span style="color: red"
+					ng-show="form.ename.$error.pattern">Please enter a string.</span>
+			</div>
+
+
+			<input class="btn btn-primary" type="submit"
+				ng-disabled="form.$invalid" value="Register" />
+
+		</form>
+	</div>
+
+
+
+</div>
+Please enter another id if you are not redirected to 'Take Survey' page.
